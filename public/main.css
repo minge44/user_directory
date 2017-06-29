@@ -1,0 +1,19 @@
+* {
+  margin: 0 auto;
+}
+.wrap {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.profile {
+  text-align: center;
+  border: 1px solid gray;
+  width: 212px;
+  margin-bottom: 20px;
+}
+h1 {
+  padding-bottom: 50px;
+  padding-left: 50px;
+  color: gray;
+}

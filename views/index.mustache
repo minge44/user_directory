@@ -2,14 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+
     <title></title>
   </head>
   <body>
+    <h1>Index</h1>
+    <a href="page.html">
+    <div class="wrap">
+    {{#users}}
+    <div class="profile">
+      <img src="{{avatar}}"></img>
+      <div class="username">
+        {{username}}
+      </div>
+      <div class="job">
+        {{job}}
+        {{^job}}
+        <div class="none">
+          Currently unemployed
+        </div>
+        {{/job}}
+      </div>
+      <div class="company">
+        {{company}}
+      </div>
+    </div>
 
-<img src="{{img}}"></img>
-
-
+    {{/users}}
+  </div>
+    </a>
 <script type="text/javascript" src="../app/data.js"></script>
-<script type="text/javascript" src="../app/index.js"></script>
   </body>
 </html>
