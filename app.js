@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const mustacheExpress = require('mustache-express');
 
-const data = require("./app/data.js");
+const data = require("./data.json");
 
 const app = express();
 app.use(express.static('public'));
